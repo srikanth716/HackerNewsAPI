@@ -1,0 +1,8 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    background-color: #fadbbb;
+}
