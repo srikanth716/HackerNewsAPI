@@ -1,0 +1,27 @@
+.loader-wrapper {
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    top: 9.1%;
+    left: 5%;
+    background-color: #fadbbb;
+    display: grid;
+    place-items: center;
+}
+
+.loader {
+    border: 16px solid #e3e3e3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

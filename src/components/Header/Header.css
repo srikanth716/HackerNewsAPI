@@ -2,8 +2,8 @@
 
 .headerContainer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 90%;
   height: auto;
   margin-left: 5%;
@@ -22,8 +22,11 @@
 }
 
 .searchContainer {
+  display: flex;
+  align-items: center;
   width: calc(100% 370px);
   margin-right: 16px;
+  height: 90%;
   background-color: #ffffff;
 }
 
@@ -35,7 +38,8 @@
 }
 
 .searchInput {
-  border: 0px;
+  border: none;
+  outline: none;
   font-size: clamp(.5rem, 1.5vw, 5rem);
 }
 

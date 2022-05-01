@@ -2,11 +2,12 @@ import './Header.css';
 import * as Icon from 'react-bootstrap-icons';
 import React, { Component } from 'react';
 import Section from '../Section/Section';
+import Loading from '../Loading/Loading';
 import { getStoriesIds, getStoryDetails } from '../Data/getData';
 
 class Header extends Component {
 
-    state = { searchInput: '', idDetails: '' }
+    state = { isLoading: true, searchInput: '', idDetails: '' }
 
     async componentDidMount() {
 
@@ -20,6 +21,9 @@ class Header extends Component {
                     })
 
             })
+        this.setState({
+            isLoading: false
+        })
     }
 
     onChangingSearchInput = (event) => {
@@ -29,12 +33,13 @@ class Header extends Component {
         })
     }
 
-
     render() {
 
-        const { idDetails, searchInput } = this.state
-        if (idDetails) {
-            return (
+        const { isLoading, idDetails, searchInput } = this.state
+
+        return (
+            isLoading ?
+                <Loading /> :
                 <div>
                     <header className='headerContainer'>
 
@@ -55,8 +60,7 @@ class Header extends Component {
                     </header>
                     <Section searchResults={idDetails} searchInput={searchInput} />
                 </div>
-            )
-        }
+        )
 
     }
 
