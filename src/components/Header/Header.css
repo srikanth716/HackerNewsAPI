@@ -8,12 +8,14 @@
   height: auto;
   margin-left: 5%;
   background-color: #f57542;
+  font-family: 'Oleo Script', cursive;
 }
 
 .logoContainer {
   display: flex;
+  align-items: center;
   max-width: 180px;
-  font-size: clamp(.5rem, 1.5vw, 5rem);
+  font-size: clamp(.5rem, 1vw, 3rem);
 }
 
 .headerLogo {
@@ -26,7 +28,9 @@
   align-items: center;
   width: calc(100% 370px);
   margin-right: 16px;
-  height: 90%;
+  height: 100%;
+  width: 30%;
+  padding: .5%;
   background-color: #ffffff;
 }
 
@@ -40,7 +44,7 @@
 .searchInput {
   border: none;
   outline: none;
-  font-size: clamp(.5rem, 1.5vw, 5rem);
+  font-size: clamp(.5rem, 1vw, 5rem);
 }
 
 .settingContainer {
@@ -48,7 +52,11 @@
   align-items: center;
   justify-content: center;
   width: 25%;
-  font-size: clamp(1rem, 2vw, 5rem);
+  font-size: clamp(1rem, 1vw, 5rem);
+}
+
+.setting{
+  margin-left: 2%;
 }
 
 

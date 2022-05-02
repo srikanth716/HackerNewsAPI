@@ -45,7 +45,7 @@ class Header extends Component {
 
                         <div className='logoContainer'>
                             <img src='https://hn.algolia.com/packs/media/images/logo-hn-search-a822432b.png' className='headerLogo' alt='logo' />
-                            <span>Search <br /> Heacker News</span>
+                            <span>Search <br /> Hacker News</span>
                         </div>
 
                         <div className='searchContainer'>
@@ -55,7 +55,7 @@ class Header extends Component {
 
                         <div className='settingContainer'>
                             <Icon.Gear />
-                            <span>Settings</span>
+                            <span className='setting'>Settings</span>
                         </div>
                     </header>
                     <Section searchResults={idDetails} searchInput={searchInput} />
